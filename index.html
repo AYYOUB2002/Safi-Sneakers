@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Safi Sneakers</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="hero">
+    <img src="images/logo.png" alt="Hero Banner">
+  </section>
+
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <h1>Safi Sneakers</h1>
+    </div>
+    <p>توصيل سريع - الدفع عند الاستلام</p>
+  </header>
+
+  <section class="products">
+    <h2>منتجاتنا</h2>
+    <div class="product">
+      <a href="products/jordan1.html">
+        <img src="images/jordan1.jpg" alt="Nike Jordan Black">
+        <h3>Nike Jordan Black</h3>
+        <p>السعر: 199 درهم</p>
+      </a>
+    </div>
+    <div class="product">
+      <a href="products/jordan2.html">
+        <img src="images/jordan2.jpg" alt="Nike Jordan Gray">
+        <h3>Nike Jordan Gray</h3>
+        <p>السعر: 199 درهم</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="order-form">
+    <h2>أطلب الآن</h2>
+    <form id="orderForm">
+      <label>اسمك الكامل:</label>
+      <input type="text" id="name" required>
+
+      <label>رقم الهاتف:</label>
+      <input type="tel" id="phone" required>
+
+      <label>العنوان:</label>
+      <textarea id="address" required></textarea>
+
+      <label>اختر السنيكر:</label>
+      <select id="product">
+        <option value="Nike Jordan Black">Nike Jordan Black</option>
+        <option value="Nike Jordan Gray">Nike Jordan Gray</option>
+      </select>
+
+      <button type="button" onclick="sendOrder()">أرسل الطلب عبر WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2025 Safi Sneakers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
